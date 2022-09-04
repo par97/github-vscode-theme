@@ -328,7 +328,7 @@ function getTheme({ theme, name }) {
       {
         scope: ["comment", "punctuation.definition.comment", "string.comment"],
         settings: {
-          foreground: lightDark(scale.gray[5], scale.gray[3])
+          foreground: lightDark(scale.gray[3], scale.gray[5])
         },
       },
       {
@@ -678,6 +678,48 @@ function getTheme({ theme, name }) {
         settings: {
           foreground: lightDark(scale.blue[8], scale.blue[1]),
           fontStyle: "underline",
+        },
+      },
+      {
+        scope: ["entity.name.package.go"],
+        settings: {
+          foreground: lightDark(scale.gray[6], scale.gray[1]),
+        },
+      },
+      {
+        scope: ["entity.name.import.go"],
+        settings: {
+          foreground: lightDark(scale.blue[8], scale.blue[2]),
+        },
+      },
+      {
+        scope: ["entity.alias.import.go"],
+        settings: {
+          foreground: lightDark(scale.blue[5], scale.gray[1]),
+        },
+      },
+      {
+        scope: ["keyword.operator.address.go"],
+        settings: {
+          foreground: lightDark(scale.blue[3], scale.blue[3]),
+        },
+      },
+      {
+        scope: ["entity.name.type.go","keyword.operator.comparison.go","keyword.operator.assignment.go","keyword.operator.arithmetic.go","keyword.operator.logical.go"],
+        settings: {
+          foreground: lightDark(scale.blue[4], scale.blue[1]),
+        },
+      },
+      {
+        scope: ["support.function.go"],
+        settings: {
+          foreground: lightDark(scale.purple[5], scale.purple[2]),
+        },
+      },
+      {
+        scope: ["storage.type",],
+        settings: {
+          foreground: lightDark(scale.yellow[3], scale.yellow[3]),
         },
       },
     ],
