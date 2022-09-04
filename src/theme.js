@@ -435,7 +435,7 @@ function getTheme({ theme, name }) {
       {
         scope: "variable.other",
         settings: {
-          foreground: color.fg.default,
+          foreground: lightDark(scale.green[5], scale.green[2])
         },
       },
       {
